@@ -1,0 +1,31 @@
+# Super Contra PPO — Dependencies (pinned to latest, Sept 2026)
+# Install: pip install -r requirements.txt
+#
+# Python: 3.13 recommended (supported range 3.10–3.13).
+#         Avoid 3.14 — stable-baselines3 2.9.0 does not list it yet.
+#
+# NOTE: The existing model (models/super_c_production_final.zip) was trained
+# with SB3 2.7.1 / gymnasium 1.2.3 on Python 3.10. These newer pins
+# (2.9.0 / 1.3.0) load and resume that model fine — SB3 may print a harmless
+# version-mismatch warning. numpy is kept at 2.2.x so the pickled VecNormalize
+# state (super_c_vecnorm.pkl) restores cleanly.
+
+# RL Environment
+gymnasium==1.3.0
+stable-retro==1.0.1
+
+# RL Algorithm
+stable-baselines3==2.9.0
+
+# Deep Learning
+# For GPU, install torch separately from the CUDA index first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# Pin left as a floor so the right CUDA/CPU wheel resolves.
+torch>=2.8.0
+
+# Image Processing
+numpy==2.2.6
+opencv-python>=4.8.0
+
+# Logging
+tensorboard>=2.14.0

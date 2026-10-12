@@ -1,0 +1,64 @@
+{
+  "info": {
+    "lives": {
+      "address": 83,
+      "type": "|u1"
+    },
+    "current_level": {
+      "address": 80,
+      "type": "|u1"
+    },
+    "game_mode": {
+      "address": 24,
+      "type": "|u1"
+    },
+    "level_type": {
+      "address": 93,
+      "type": "|u1"
+    },
+    "screen_x": {
+      "address": 253,
+      "type": "|u1"
+    },
+    "scroll_x": {
+      "address": 99,
+      "type": "|u1"
+    },
+    "screen_y": {
+      "address": 206,
+      "type": "|u1"
+    },
+    "scroll_y": {
+      "address": 252,
+      "type": "|u1"
+    },
+    "indoor_depth": {
+      "address": 130,
+      "type": "|u1"
+    },
+    "score_low": {
+      "address": 2019,
+      "type": "|u1"
+    },
+    "score_mid": {
+      "address": 2020,
+      "type": "|u1"
+    },
+    "boss_dead": {
+      "address": 92,
+      "type": "|u1"
+    },
+    "weapon": {
+      "address": 184,
+      "type": "|u1"
+    },
+    "game_over": {
+      "address": 202,
+      "type": "|u1"
+    },
+    "player_state": {
+      "address": 160,
+      "type": "|u1"
+    }
+  }
+}

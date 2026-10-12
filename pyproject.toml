@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "super-contra-ai"
+version = "1.0.0"
+description = "PPO Reinforcement Learning agent that plays Super Contra (NES) using pixel observations and RAM-based reward signals"
+authors = ["You"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.15"
+gymnasium = ">=1.2.3,<2.0"
+stable-retro = ">=1.0.1"
+stable-baselines3 = ">=2.9.0"
+torch = ">=2.8.0"
+numpy = ">=2.2.0"
+opencv-python = ">=4.8.0"
+tensorboard = ">=2.14.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.scripts]
+train = "src.train:main"
+predict = "src.predict:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
